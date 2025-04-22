@@ -1,3 +1,28 @@
+# Debian-X11 Summary With APK Mirror
+
+### Download and install from PC:
+```
+curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/master/app-arm64-v8a-debug.apk
+```
+```
+adb install app-arm64-v8a-debug.apk
+```
+
+### Download and install from PC:
+```
+curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/master/termux-app_v0.118.2+github-debug_arm64-v8a.apk
+```
+```
+adb install termux-app_v0.118.2+github-debug_arm64-v8a.apk
+```
+
+#### Run this command within termux on the Android device, install Debian Bookworm with X11:
+```
+curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/master/debian-x11-app.sh -o debian-x11-app.sh && chmod +x debian-x11-app.sh && ./debian-x11-app.sh
+```
+
+
+
 # Proot-Distro Scripts
 
 This repository contains scripts that are able to be executed using one line of code, and without having to preinstall anything other than the Termux app and Termux-x11 viewing app. Additional scripts are provided below to add xRDP or VNC support to your environment, so you can connect to your environment remotely with a computer. 
@@ -31,42 +56,42 @@ This repository contains scripts that are able to be executed using one line of 
 * Force close Termux, then type in the alias of environment you installed, 'ubuntu', 'debian', or 'termux'.
 * Now the app will run without any problems and have hardware acceleration enabled always.
 
-<img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/main/Pictures/installationscript.png?raw=true" width="100" height="200"><img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/main/Pictures/repo1.png?raw=true" width="100" height="200"><img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/main/Pictures/repo2.png?raw=true" width="100" height="200"><img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/main/Pictures/usersetup.png?raw=true" width="100" height="200"><img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/main/Pictures/frozenx11.png?raw=true" width="100" height="200"><img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/main/Pictures/termuxappinfo.png?raw=true" width="100" height="200"><img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/main/Pictures/forcestoptermux.png?raw=true" width="100" height="200">
+<img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/master/Pictures/installationscript.png?raw=true" width="100" height="200"><img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/master/Pictures/repo1.png?raw=true" width="100" height="200"><img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/master/Pictures/repo2.png?raw=true" width="100" height="200"><img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/master/Pictures/usersetup.png?raw=true" width="100" height="200"><img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/master/Pictures/frozenx11.png?raw=true" width="100" height="200"><img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/master/Pictures/termuxappinfo.png?raw=true" width="100" height="200"><img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/master/Pictures/forcestoptermux.png?raw=true" width="100" height="200">
 
 #
 ## Ubuntu Environment 
 
-<img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/main/Pictures/ubuntu.png?raw=true" width="100" height="200"> <img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/main/Pictures/ubuntu2.png?raw=true" width="100" height="200">
+<img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/master/Pictures/ubuntu.png?raw=true" width="100" height="200"> <img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/master/Pictures/ubuntu2.png?raw=true" width="100" height="200">
 
 Builds an Ubuntu Mantic Minotaur proot-distro environment with an xfce4 provided GUI. Installs in about 30 minutes to an hour.
 
 **Copy and paste into Termux:**
 ```
-curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/main/ubuntu-x11-app.sh -o ubuntu-x11-app.sh && chmod +x ubuntu-x11-app.sh && ./ubuntu-x11-app.sh
+curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/master/ubuntu-x11-app.sh -o ubuntu-x11-app.sh && chmod +x ubuntu-x11-app.sh && ./ubuntu-x11-app.sh
 ```
 
 #
 ## Debian Environment 
 
-<img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/main/Pictures/debian.png?raw=true" width="100" height="200"> <img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/main/Pictures/debian2.png?raw=true" width="100" height="200">
+<img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/master/Pictures/debian.png?raw=true" width="100" height="200"> <img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/master/Pictures/debian2.png?raw=true" width="100" height="200">
 
 Builds a Debian Bookworm proot-distro environment with an xfce4 provided GUI. Installs in about 30 minutes to an hour.
 
 **Copy and paste into Termux:**
 ```
-curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/main/debian-x11-app.sh -o debian-x11-app.sh && chmod +x debian-x11-app.sh && ./debian-x11-app.sh
+curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/master/debian-x11-app.sh -o debian-x11-app.sh && chmod +x debian-x11-app.sh && ./debian-x11-app.sh
 ```
 
 #
 ## Termux Environment 
 
-<img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/main/Pictures/termux.png?raw=true" width="100" height="200"> <img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/main/Pictures/termux2.png?raw=true" width="100" height="200">
+<img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/master/Pictures/termux.png?raw=true" width="100" height="200"> <img src="https://github.com/waynepiekarski/proot-distro-scripts/blob/master/Pictures/termux2.png?raw=true" width="100" height="200">
 
 Builds a pure Termux environment with an xfce4 provided GUI, and no proot-distro. Installs in about 5-10 minutes.
 
 **Copy and paste into Termux:**
 ```
-curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/main/termux-x11-app.sh -o termux-x11-app.sh && chmod +x termux-x11-app.sh && ./termux-x11-app.sh
+curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/master/termux-x11-app.sh -o termux-x11-app.sh && chmod +x termux-x11-app.sh && ./termux-x11-app.sh
 ```
 
 #
@@ -87,7 +112,7 @@ Adds xRDP support, which allows you to connect to your environment remotely usin
 
 **Copy and paste inside of your environment:**
 ```
-curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/main/xrdp-setup.sh -o xrdp-setup.sh && chmod +x xrdp-setup.sh && source xrdp-setup.sh
+curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/master/xrdp-setup.sh -o xrdp-setup.sh && chmod +x xrdp-setup.sh && source xrdp-setup.sh
 ```
 
 #
@@ -97,7 +122,7 @@ Adds xRDP support, which allows you to connect to your environment remotely usin
 
 **Copy and paste inside of Termux:**
 ```
-curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/main/xrdp-setup-termux.sh -o xrdp-setup-termux.sh && chmod +x xrdp-setup-termux.sh && source xrdp-setup-termux.sh
+curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/master/xrdp-setup-termux.sh -o xrdp-setup-termux.sh && chmod +x xrdp-setup-termux.sh && source xrdp-setup-termux.sh
 ```
 
 #
@@ -107,7 +132,7 @@ Adds VNC support, which allows you to connect to your environment remotely using
 
 **Copy and paste inside of your environment:**
 ```
-curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/main/vnc-setup.sh -o vnc-setup.sh && chmod +x vnc-setup.sh && source vnc-setup.sh
+curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/master/vnc-setup.sh -o vnc-setup.sh && chmod +x vnc-setup.sh && source vnc-setup.sh
 ```
 
 #
@@ -117,7 +142,7 @@ Adds VNC support, which allows you to connect to your environment remotely using
 
 **Copy and paste inside of your environment:**
 ```
-curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/main/vnc-setup-termux.sh -o vnc-setup-termux.sh && chmod +x vnc-setup-termux.sh && source vnc-setup-termux.sh
+curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/master/vnc-setup-termux.sh -o vnc-setup-termux.sh && chmod +x vnc-setup-termux.sh && source vnc-setup-termux.sh
 ```
 
 ## Process 9 error
