@@ -16,13 +16,17 @@ curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/m
 adb install termux-app_v0.118.2+github-debug_arm64-v8a.apk
 ```
 
-### Termux force close fix:
+### Termux force close fix (via UI, more reliable):
+Android 14 and higher. Enable toggle once at Android Settings -> System -> Developer options -> Disable child process restrictions to disable killing of extra phantom processes > 32 and processes using excessive cpu.
+You will need to enable Developer options first on your device for it to show in System settings page, and it can usually be done by tapping Android Settings -> About -> Build number field 7 times.
+
+### Termux force close fix (via adb, less reliable):
 There are problems with Android 12, 13, 14, force closing Termux. To fix this you must run this adb command, or else Termux will keep being forced to close your X11 session with a process 9 error:
 ```
 adb shell device_config put activity_manager max_phantom_processes 2147483647
 ```
 
-#### Run this command within termux on the Android device, install Debian Bookworm with X11:
+### Run this command within termux on the Android device, install Debian Bookworm with X11:
 ```
 curl -sL https://raw.githubusercontent.com/waynepiekarski/proot-distro-scripts/master/debian-x11-app.sh -o debian-x11-app.sh && chmod +x debian-x11-app.sh && ./debian-x11-app.sh
 ```
